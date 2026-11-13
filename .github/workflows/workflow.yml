@@ -8,8 +8,7 @@ on:
 
 jobs:
   build:
-        runs-on: ubuntu-24.04
-
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out the code
         uses: actions/checkout@v6
@@ -24,6 +23,9 @@ jobs:
 
       - name: Lint with flake8
         run: flake8 service --max-line-length=127 --statistics
+
+      - name: Run unit tests with nosetests
+        run: nosetests -v
 
       - name: Run unit tests with nosetests
         run: nosetests -v
