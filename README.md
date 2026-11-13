@@ -1,4 +1,6 @@
-# CI/CD Tools and Practices Final Project Template
+## CI/CD Final Project – Counters API
+
+This project uses GitHub Actions to check and test a Python counter API, and OpenShift Pipelines to build and deploy it.
 
 This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
 
